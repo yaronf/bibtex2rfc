@@ -31,5 +31,5 @@ Only the minimum number of fields are translated from bibtex to bibxml. There ar
 
 ## Futures
  * Expose this tool as a Web service (interactive or not).
- * Provide a permanent service/URL so that XML2RFC documents can reference it, instead of using manual conversion. For example, `http://bibxml.org/convert?orig=http://my-dois/11223344/ref.bibtex`
- * Integrate the tool into XML2RFC
+ * Provide a permanent service/URL so that xml2rfc documents can reference it, instead of using manual conversion. For example, `http://bibxml.org/convert?orig=http%3A%2F%2Fmy-dois%2F11223344%2Fref.bibtex`
+ * Integrate the tool into xml2rfc
