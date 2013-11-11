@@ -3,7 +3,9 @@ bibtex2rfc
 
 Convert bibtex citations into bibxml references for use in Internet Drafts and RFCs
 
-Bibtex is the most common citation format for academic publications. This tool converts bibtex into the bibxml format which is used by xml2rfc. This enables to reference such publications conveniently in Internet Drafts and RFCs.
+Bibtex is the most common citation format for academic publications. This tool converts bibtex into the
+bibxml format which is used by [xml2rfc](http://xml.resource.org/).
+This enables to reference such publications conveniently in Internet Drafts and RFCs.
 
 The code has been tested with both version 1 and 2 of xml2rfc.
 
@@ -29,5 +31,5 @@ Only the minimum number of fields are translated from bibtex to bibxml. There ar
 
 ## Futures
  * Expose this tool as a Web service (interactive or not).
- * Provide a permanent service/URL to that XML2RFC documents can reference it, instead of using manual conversion. For example, `http://bibxml.org/convert?orig=http://my-dois/11223344/ref.bibtex`
- * Integrate the tool into XML2RFC
+ * Provide a permanent service/URL so that xml2rfc documents can reference it, instead of using manual conversion. For example, `http://bibxml.org/convert?orig=http%3A%2F%2Fmy-dois%2F11223344%2Fref.bibtex`
+ * Integrate the tool into xml2rfc
