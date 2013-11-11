@@ -64,7 +64,14 @@ def record_to_bibxml(rec):
 
     
 if __name__ == '__main__':
-    bibs = bibtex.read_file(sys.argv[1])
+    if len(sys.argv) == 2 and sys.argv[1] == '--help':
+        print('Usage: ' + sys.argv[0] + ' [infile]')
+        sys.exit(0)
+
+    if len(sys.argv) == 1:
+        bibs = bibtex.read_file('/dev/stdin')
+    else:
+        bibs = bibtex.read_file(sys.argv[1])
     # bibs = bibtex.read_string(bibtex.EXAMPLE_STRING)
     # print(bibs[0].handle + ": " + repr(bibs[0].data))
     for bib in bibs:
