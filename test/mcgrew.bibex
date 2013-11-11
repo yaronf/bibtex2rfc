@@ -1,0 +1,8 @@
+@misc{cryptoeprint:2012:623,
+    author = {David McGrew},
+    title = {Impossible plaintext cryptanalysis and probable-plaintext collision attacks of 64-bit block cipher modes},
+    howpublished = {Cryptology ePrint Archive, Report 2012/623},
+    year = {2012},
+    note = {\url{http://eprint.iacr.org/}},
+}
+

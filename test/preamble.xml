@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
+<?rfc symrefs="no"?>
+]>
+<rfc docName="draft-sheffer-test-test-test-00" ipr="trust200902" category="std">
+  <front>
+    <title abbrev="Test Draft">Test Me</title>
+    <author initials="Y." surname="Sheffer" fullname="Yaron Sheffer">
+    </author>
+    <date month="November" year="2013"/>
+    <area>
+Internet Area
+</area>
+    <keyword>Internet-Draft</keyword>
+    <abstract>
+	<t>An abstract</t>
+    </abstract>
+  </front>
+  <middle>
+    <section title="Introduction" anchor="d1e389">
+    </section>
+  </middle>
+  <back>
+    <references title="Normative References">
