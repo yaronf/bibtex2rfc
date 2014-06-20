@@ -26,7 +26,7 @@ And try one of the *.bibtex files under the `test` directory.
 
 Only the minimum number of fields are translated from bibtex to bibxml. There are two reasons for that:
 
- * Bibtext citations vary a lot in how they interpret the different fields, and in fact, even in their syntax.
+ * Bibtex citations vary a lot in how they interpret the different fields, and in fact, even in their syntax.
  * Bibxml is extremely limited in what it can express.
 
 ## Futures
