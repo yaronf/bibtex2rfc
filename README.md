@@ -9,6 +9,9 @@ This enables to reference such publications conveniently in Internet Drafts and 
 
 The code has been tested with both version 1 and 2 of xml2rfc.
 
+> :warning: **Obsolete**: the `python-bibtex` dependency is no longer available on Ubuntu 20.10 and is itself stuck on Python 2.7.
+The code needs to be rewritten, possibly with [BibTexParser](https://github.com/sciunto-org/python-bibtexparser).
+
 ## Prerequisites
 
 Install the python-bibtex package. On Ubuntu:
