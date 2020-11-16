@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+
+from bibtex2rfc_pkg import bibxml
+
+bibxml.main()

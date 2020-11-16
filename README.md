@@ -1,38 +1,29 @@
 bibtex2rfc
 ==========
 
-Convert bibtex citations into bibxml references for use in Internet Drafts and RFCs
+Convert BibTeX citations into bibxml references for use in Internet Drafts and RFCs
 
-Bibtex is the most common citation format for academic publications. This tool converts bibtex into the
+BibTeX is the most common citation format for academic publications. This tool converts BibTeX into the
 bibxml format which is used by [xml2rfc](http://xml.resource.org/).
 This enables to reference such publications conveniently in Internet Drafts and RFCs.
 
-The code has been tested with both version 1 and 2 of xml2rfc.
+Version 2 of this tool has been modernized to Python3 and xml2rfc v3.
 
-> :warning: **Obsolete**: the `python-bibtex` dependency is no longer available on Ubuntu 20.10 and is itself stuck on Python 2.7.
-The code needs to be rewritten, possibly with [BibTexParser](https://github.com/sciunto-org/python-bibtexparser).
+## Installation
 
-## Prerequisites
-
-Install the python-bibtex package. On Ubuntu:
-
-    apt-get install python-bibtex
-
-**Note**: the code was tested on Ubuntu 13.10, but the python-bibtex package is also available on Fedora.
+    pip3 install bibtex2rfc
 
 ## Usage
- `bibxml file`
 
-And try one of the *.bibtex files under the `test` directory.
+    bibtex2rfc file
+
+Where `file` contains one or more BibTeX entries. If `file` is omitted, reads from standard input. You can try one of the `*.bibtex` files under the `tests` directory on GitHub.
+
+**Note**: the code was tested on MacOS.
 
 ## Limitations
 
-Only the minimum number of fields are translated from bibtex to bibxml. There are two reasons for that:
+Only the minimum number of fields are translated from BibTeX to bibxml. There are two reasons for that:
 
- * Bibtex citations vary a lot in how they interpret the different fields, and in fact, even in their syntax.
+ * BibTeX citations vary a lot in how they interpret the different fields, and in fact, even in their syntax.
  * Bibxml is extremely limited in what it can express.
-
-## Futures
- * Expose this tool as a Web service (interactive or not).
- * Provide a permanent service/URL so that xml2rfc documents can reference it, instead of using manual conversion. For example, `http://bibxml.org/convert?orig=http%3A%2F%2Fmy-dois%2F11223344%2Fref.bibtex`
- * Integrate the tool into xml2rfc
